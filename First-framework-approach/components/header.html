@@ -1,0 +1,114 @@
+<!--
+  COMPOSANT HEADER
+  =================
+  
+  💡 PARALLÈLE AVEC FIGMA :
+  Dans Figma, vous créez un composant "Header" que vous pouvez réutiliser 
+  dans plusieurs frames. Ici, c'est pareil : ce fichier contient le HTML 
+  du header que vous pouvez copier-coller dans toutes vos pages.
+  
+  UTILISATION :
+  1. Ouvrir ce fichier
+  2. Copier tout le contenu (sauf ce commentaire)
+  3. Coller dans votre page HTML (index.html, pages/...)
+  4. Adapter le contenu selon vos besoins (liens, texte, etc.)
+  
+  BEM :
+  - Block : header
+  - Elements : header__logo, header__nav, header__link
+  - Modifiers : header--sticky (variation)
+-->
+
+<!--Mobile-nav home page-->
+ <header class="nav-mobile">
+      <nav class="header__nav">
+        <a href="./index.html" class="nav-button nav-button-currentpage text-button text-nav">
+          Home
+        </a>
+
+        <a href="./pages/Tour.html" class="nav-button text-button text-nav">
+          Tour
+        </a>
+
+        <a href="./pages/Music.html" class="nav-button text-button text-nav">
+          Music
+        </a>
+
+        <a href="./pages/Merch.html" class="nav-button last-nav text-button text-nav">
+          Merch
+        </a>
+      </nav>
+    </header>
+
+    <!--mobile nav autre page que home-->
+    <!--Emelyne 07/03-->
+  <header class="nav-mobile">
+      <nav class="header__nav">
+        <a href="../index.html" class="nav-button text-button text-nav">
+          Home
+        </a>
+
+        <a href="./Tour.html" class="nav-button text-button text-nav">
+          Tour
+        </a>
+
+        <a href="./Music.html" class="nav-button nav-button-currentpage text-button text-nav">
+          Music
+        </a>
+
+        <a href="./Merch.html" class="nav-button last-nav text-button text-nav">
+          Merch
+        </a>
+      </nav>
+    </header>
+    <!--Emelyne 07/03-->
+
+    <!--Desktop nav home-->
+      <header class="nav-desktop">
+      <nav class="header__nav">
+        <a href="./index.html" class="nav-button nav-button-currentpage text-button text-nav">
+          Home
+          <img src="../First-framework-approach/assets/images/nav-img/home icon.svg" alt="go to the home page" class="nav-img">
+        </a>
+
+        <a href="./pages/Tour.html" class="nav-button text-button text-nav">
+          Tour
+          <img src="../First-framework-approach/assets/images/nav-img/tour icon.svg" alt="go to the tour page" class="nav-img">
+        </a>
+
+        <a href="./pages/Music.html" class="nav-button text-button text-nav">
+          Music
+          <img src="../First-framework-approach/assets/images/nav-img/music icon.svg" alt="go to the music page" class="nav-img">
+        </a>
+
+        <a href="./pages/Merch.html" class="nav-button last-nav text-button text-nav">
+          Merch
+          <img src="../First-framework-approach/assets/images/nav-img/merch icon.svg" alt="go to the merch page" class="nav-img">
+        </a>
+      </nav>
+    </header>
+
+    <!--dektop nav autre page que home-->
+   <header class="nav-desktop">
+      <nav class="header__nav">
+        <a href="../index.html" class="nav-button text-button text-nav">
+          Home
+          <img src="../assets/images/nav-img/home icon.svg" alt="go to the home page" class="nav-img">
+        </a>
+
+        <a href="./Tour.html" class="nav-button text-button text-nav">
+          Tour
+          <img src="../assets/images/nav-img/tour icon.svg" alt="go to the tour page" class="nav-img">
+        </a>
+
+        <a href="./Music.html" class="nav-button nav-button-currentpage text-button text-nav">
+          Music
+          <img src="../assets/images/nav-img/music icon.svg" alt="go to the music page" class="nav-img">
+        </a>
+
+        <a href="./Merch.html" class="nav-button last-nav text-button text-nav">
+          Merch
+          <img src="../assets/images/nav-img/merch icon.svg" alt="go to the merch page" class="nav-img">
+        </a>
+      </nav>
+    </header>

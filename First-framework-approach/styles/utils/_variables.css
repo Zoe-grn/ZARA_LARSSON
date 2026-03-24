@@ -1,0 +1,106 @@
+/* 
+  VARIABLES GLOBALES (design tokens)
+  - Inspirez-vous directement de la maquette Figma 
+
+    (couleurs, typos, espaces, rayons, ombres, etc.)
+  
+  💡 POURQUOI UTILISER REM AU LIEU DE PX ?
+  - Accessibilité : respecte les préférences de taille de police de l'utilisateur
+  - Maintenabilité : changer la taille de base fait s'adapter tout le reste
+  - Conversion : 1rem = 16px (taille de base du navigateur)
+*/
+
+:root {
+
+  /* Typographie */
+  --h1 :96px;
+  --h2 : 64px;
+  --subtitle: 32px; /* en laptop dans le doc c'est juste marqué title c une erreur des filles */
+  --text: 24px;
+  --secondary: 20px;
+  
+ /* @media (max-width: 768px) {
+    --h1:64px;
+    --h2: 32px;
+    --subtitle: 20px;
+    --text: 20px;
+    --secondary: 16px;
+  } je l'ai ai décalé en bas dans un autre :root parce que sinon le navigateur n'arrive pas à le prendre en compte*/
+
+
+/*emelyne 25/02*/--main-padding: 56px; /*emelyne 25/02*/
+
+
+
+ /* Radius*/
+ /*correction emelyne 07/03*/--radius-cercle: 50%;/*correction emelyne 07/03*/
+  --radius-h1: 5rem; /*80px*/
+  --radius-lg: 1.5rem; /*24px*/
+  --radius-md: 1rem; /*16px*/
+  --radius-sm: 0.5rem; /*8px*/
+ 
+
+
+
+  /*Couleurs principales*/
+  --hot-pink: #E7137C;
+  --Bright-blue: #42CAFD;
+  --Yellow: #F6EC14;
+  --Blue: #009BEE;
+ --dark-blue: #007FC4;
+ --bright-pink: #F202CE;
+
+
+  --transparent-white: rgba(255, 255, 255, 0.8);
+
+
+  /*GRADIENT*/
+  --button-gradient: linear-gradient(181.6deg, #CAF0FE 6.72%, #009BEE 26.68%, #42CAFD 88.46%, #009BEE 98.92%);
+  --pink-gradient: linear-gradient(181.6deg, #FFD1F3 9.57%, #F202CE 31.43%, #FF80DD 83.71%, #F202CE 98.92%);
+  --secondary-button: linear-gradient(179.64deg, #FAE3F3 0.37%, #FFFFFF 13.35%, #EEA6CE 48.93%, #E98EC0 85.96%, #FDF2F8 100.38%);
+  --secondary-pink: linear-gradient(179.64deg, #F7BFDD 0.37%, #FAE3F3 26.34%, #D66AA5 85.96%, #F7BFDD 100.38%);
+  --nav-gradient: linear-gradient(93.18deg, #FFFFFF -47.96%, #D8ECF8 71.77%);
+
+
+  --onclick-blue: linear-gradient(181.6deg, #0993DE 26.68%, #20B9F3 83.24%, #0592DD 98.92%);
+  --onclick-pink: linear-gradient(181.6deg, #F202CE 26.68%, #FF80DD 83.24%, #F202CE 98.92%);
+
+
+  --rainbow-gradient: linear-gradient(75.05deg, rgba(215, 227, 236, 0.8) -6.35%, rgba(255, 255, 255, 0.8) 4.37%, rgba(215, 227, 236, 0.8) 15.08%, rgba(226, 217, 161, 0.8) 23.66%, rgba(210, 253, 169, 0.8) 35.44%, rgba(150, 234, 167, 0.8) 47.23%, rgba(126, 217, 232, 0.8) 56.34%, rgba(142, 184, 233, 0.8) 62.77%, rgba(190, 195, 237, 0.8) 71.34%, rgba(215, 227, 236, 0.8) 78.3%, rgba(255, 255, 255, 0.8) 92.23%, rgba(215, 227, 236, 0.8) 105.09%);
+
+
+
+
+  /* Effets (converties en rem pour cohérence) */
+--inner-shadow: 0.25rem 0.25rem 0.231rem 0rem rgba(0, 127, 196, 1) inset;
+--inner-shadow-black: 0.25rem 0.25rem 0.231rem 0rem rgba(0, 0, 0, 0.25) inset;
+
+ --inner-shadow-nav1: -3px -3px 4px 0px rgba(20, 114, 164, 0.48) inset;
+--inner-shadow-nav2: 5px 5px 6.4px 4px rgba(20, 114, 164, 0.26) inset;
+--inner-shadow-pink: 0px 0px 4px 3px rgba(231, 19, 124, 0.45) inset;
+/*emelyne 07/03*/--inner-shadow-pink2: 4px 4px 3.7px 0px rgba(242, 2, 206, 1) inset;
+--inner-shadow-white: 0px 0px 2px 4px rgba(188, 197, 196, 1) inset;
+--inner-shadow-gray: 0px 4px 4px 0px rgba(79, 79, 79, 0.16) inset;
+/*emelyne 07/03*/
+
+--drop-shadow: 0px 0px 0.25rem 0.063rem rgba(0, 0, 0, 0.25);
+
+
+--inner-shadow-blue: 0px 0px 4px 4px rgba(66, 202, 253, 0.25) inset;
+--blur: blur(20px);
+
+
+}
+
+/*emelyne 25/02*/ @media (max-width: 768px) {
+  :root {
+    --h1:64px;
+    --h2: 32px;
+    --subtitle: 20px;
+    --text: 20px;
+    --secondary: 16px;
+
+ --main-padding: 24px;
+  }
+}
+/*emelyne 25/02*/

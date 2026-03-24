@@ -1,0 +1,59 @@
+<!--
+  COMPOSANT CARD (Carte)
+  =======================
+  
+  💡 PARALLÈLE AVEC FIGMA :
+  Dans Figma, vous créez un composant "Card" que vous dupliquez pour 
+  créer plusieurs cartes avec du contenu différent. Ici, c'est pareil :
+  vous copiez-collez ce composant plusieurs fois et vous changez le contenu.
+  
+  UTILISATION :
+  1. Ouvrir ce fichier
+  2. Copier tout le contenu (sauf ce commentaire)
+  3. Coller dans votre page HTML dans la section des cartes
+  4. Dupliquer pour créer plusieurs cartes
+  5. Adapter le contenu de chaque carte (image, titre, texte, lien)
+  
+  BEM :
+  - Block : card
+  - Elements : card__image, card__title, card__text, card__link
+-->
+
+
+<article class="card-date top-border">
+  <p class="text">Date</p>
+  <p class="text">Salle</p>
+  <p class="text">Location</p>
+  <div class="button-tour">
+    <button type="button" class="rectangle-button rectangle-button-lg">
+      <p class="text-button">Buy ticket</p>
+    </button>
+  </div>
+</article>
+
+<!--Card des titres de haut de page-->
+<div class="glass-effect-h1">
+  <h1>Titre</h1>
+</div>
+
+<!--section grid-->
+<section class="album-grid blue-section">
+  <!--Card des album page music 26-02-->
+  <article class="card-album">
+    <img src="../assets/images/cover/Midnight-sun.webp" alt="Midnight Sun">
+    <p class="text">Midnight Sun</p>
+    <p class="text-secondary blue">2025</p>
+  </article>
+
+</section>
+
+<section class="blue-section merch">
+  <div class="music-merch">
+    <article class="card-merch">
+      <img src="../assets/images/cover/Midnight-sun.webp" alt="Midnight Sun">
+      <p class="text">Midnight Sun</p>
+      <p class="text-secondary">2025</p>
+      <button type="button" class="rectangle-button rectangle-button-lg"><p class="text-button">Buy ticket</p></button>
+    </article>
+  </div>
+</section>

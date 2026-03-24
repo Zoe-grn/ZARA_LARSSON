@@ -1,0 +1,61 @@
+/* _grid.css : helpers de grille simples */
+/*css grid page music 4colonnes*/
+.quatre-grid {
+  padding: 3.5rem ;
+  width: 100%;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 2.5rem;
+  column-gap: 2.5rem;
+
+}
+
+/*css grid page merch 3colonnes - concerne que apparel*/
+.merch-grid {
+  width: 100%;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 2.5rem;
+}
+
+/* 3 colonnes */
+@media (max-width: 1200px) {
+  .quatre-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}
+
+/* 2 colonnes */
+@media (max-width: 900px) {
+  .quatre-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .merch-grid {
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+
+/* 1 colonne */
+@media (max-width: 600px) {
+  .quatre-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+
+  .merch-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    justify-content: center;
+    width: 100%;
+  }
+
+}

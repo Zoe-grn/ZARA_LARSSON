@@ -1,0 +1,41 @@
+
+
+.header__nav {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); 
+  width: 100%;
+  height: auto;
+}
+
+/*emelyne 25/02*/
+.nav-mobile{
+  display: none;
+}
+
+@media (max-width: 800px){
+  .nav-mobile{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  .header__nav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: auto;
+  }
+
+  .nav-button{
+    justify-content: center;
+    padding: 0;
+  }
+
+  .nav-desktop{
+    display: none;
+  }
+}
+/*emelyne 25/02*/

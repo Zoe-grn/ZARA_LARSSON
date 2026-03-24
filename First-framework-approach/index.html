@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Zara Larsson Tour</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Styles principaux (ne changez pas le chemin) -->
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="https://use.typekit.net/baw0lnq.css">
+
+</head>
+
+<body>
+
+  <!--Emelyne 25/02-->
+  <header class="nav-mobile">
+      <nav class="header__nav">
+        <a href="./index.html" class="nav-button nav-button-currentpage text-button text-nav">
+          Home
+        </a>
+
+        <a href="./pages/Tour.html" class="nav-button text-button text-nav">
+          Tour
+        </a>
+
+        <a href="./pages/Music.html" class="nav-button text-button text-nav">
+          Music
+        </a>
+
+        <a href="./pages/Merch.html" class="nav-button last-nav text-button text-nav">
+          Merch
+        </a>
+      </nav>
+    </header>
+    <!--Emelyne 25/02-->
+
+  <main class="glass-effect-bg">
+    <!--Emelyne 18/02-->
+    <dialog id="myPopup">
+      <div class="dialog-top">
+        <div class="dialog-titre">
+          <h3 class="popup-titre">Newsletter</h3>
+          <button class="icone buttonclose close-modal-trigger"><img src="./assets/icons/Close.svg" alt="icone"
+              class="buttonclose-img"></button>
+        </div>
+        <p class="text">🐬 Do you wanna be part of Zara’s Symphony?</p>
+      </div>
+
+      <div class="dialog-buttons">
+        <button type="button" id="btnYes" class="rectangle-button button-yes">
+          <p class="text-button">Yes</p>
+        </button>
+        <button type="button" class="rectangle-button close-modal-trigger">
+          <p class="text-button">No</p>
+        </button>
+      </div>
+
+      <div id="extra-content" class="hidden-content">
+        <p class="text">✨ Enter your email </p>
+        <form action="" method="get">
+          <input type="email" name="email" placeholder="E-mail" required />
+          <button type="submit"
+            class="rectangle-button rectangle-button-md text-button close-modal-trigger">Submit</button>
+        </form>
+
+      </div>
+    </dialog>
+    <!--emelyne 18/02-->
+
+       <header class="nav-desktop">
+      <nav class="header__nav">
+        <a href="./index.html" class="nav-button nav-button-currentpage text-button text-nav">
+          Home
+          <img src="../First-framework-approach/assets/images/nav-img/home icon.svg" alt="go to the home page" class="nav-img">
+        </a>
+
+        <a href="./pages/Tour.html" class="nav-button text-button text-nav">
+          Tour
+          <img src="../First-framework-approach/assets/images/nav-img/tour icon.svg" alt="go to the tour page" class="nav-img">
+        </a>
+
+        <a href="./pages/Music.html" class="nav-button text-button text-nav">
+          Music
+          <img src="../First-framework-approach/assets/images/nav-img/music icon.svg" alt="go to the music page" class="nav-img">
+        </a>
+
+        <a href="./pages/Merch.html" class="nav-button last-nav text-button text-nav">
+          Merch
+          <img src="../First-framework-approach/assets/images/nav-img/merch icon.svg" alt="go to the merch page" class="nav-img">
+        </a>
+      </nav>
+    </header>
+
+    <section class="Zara-Larsson-intro">
+
+      <!--Section rose à gauche-->
+      <div class="presentation-rose">
+
+        <img src="./assets/images/zara-face-pink.webp" alt="profile picture of Zara Larsson" class="photo-de-profil">
+
+        <div class="name">
+          <p class="subtitle"> Zara Larsson</p>
+          <p class="secondary yellow-text"> she/her</p>
+        </div>
+
+        <div class="personal-infos">
+          <p class="text"> <b>Birthday:</b> Dec. 16th, 1997</p>
+          <p class="text"> <b>Status:</b> On tour!!</p>
+        </div>
+
+        <div class="social">
+          <a href="https://www.facebook.com/search/top?q=zara%20larsson" target="_blank" class="icone">
+            <img src="./assets/icons/ri_facebook-fill.svg" alt="go to the facebook profile of Zara Larsson" class="img-icone">
+          </a>
+
+          <a href="https://www.instagram.com/zaralarsson/" target="_blank" class="icone">
+            <img src="./assets/icons/mdi_instagram.svg" alt="go to the instagram profile of Zara Larsson" class="img-icone">
+          </a>
+
+          <a href="https://x.com/zaralarsson?s=20" target="_blank" class="icone">
+            <img src="./assets/icons/prime_twitter.svg" alt="go to the X profile of Zara Larsson" class="img-icone">
+          </a>
+
+          <a href="https://www.tiktok.com/@zaralarsson" target="_blank" class="icone">
+            <img src="./assets/icons/akar-icons_tiktok-fill.svg" target="_blank" alt="go to the Tiktok profile of Zara Larsson" class="img-icone">
+          </a>
+
+        </div>
+
+      </div>
+
+      <!--Section img + btn à gauche-->
+      <div class="presentation-droite">
+        <button type="button" class="rectangle-button rectangle-button-lg">
+          <p class="text-button">Buy ticket</p>
+        </button>
+      </div>
+
+
+    </section>
+
+    <section class="blue-section midnight-sun-presentation">
+
+
+      <div class=" midnight-sun-cover">
+        <img src="../First-framework-approach/assets/images/Midnight sun cover.webp" alt="Midnight Sun cover">
+      </div>
+
+      <div class="info">
+        <h2 class="album-title">Midnight Sun</h2>
+        <p class="text-secondary blue ">Released on September 26th, 2025</p>
+        <ol class="text">
+          <li data-number="1">Midnight Sun</li>
+          <li data-number="2">Blue Moon</li>
+          <li data-number="3">Pretty Ugly</li>
+          <li data-number="4">Crush</li>
+          <li data-number="5">Girl</li>
+          <li data-number="6">Eurosexy</li>
+          <li data-number="7">Hot & Sexy</li>
+          <li data-number="8">The Ambition</li>
+          <li data-number="9">Saturn</li>
+          <li data-number="10">Puss Puss</li>
+        </ol>
+      </div>
+    </section>
+
+ 
+
+    <!--Emelyne 05/03-->
+  <section class="latest-video">
+       <img src="./assets/images/mp3.webp" class="mp3" alt="background picture of a media reader">
+
+    <div class="video-container">  
+      <iframe 
+      src="https://www.youtube.com/embed/uvY8fdgezLQ?si=vZ9saFc1tmw03rxp"
+      title="YouTube video player" 
+      frameborder="0" 
+      allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+    </iframe>
+</div>
+    </section>
+<!--Emelyne 05/03-->
+
+
+  </main>
+
+  <!--
+      COMPOSANT FOOTER
+      ================
+      💡 Source : components/footer.html
+      Copier le contenu de ce fichier ici et adapter selon vos besoins
+    -->
+  <footer class="footer">
+
+
+    <form action="" method="get">
+      <label for="newsletter" class="text">NEWSLETTER</label>
+      <input type="email" name="email" placeholder="E-mail" required />
+      <button type="submit" class="rectangle-button button-submit text-button">Submit</button>
+    </form>
+
+
+    <div class="platforms">
+      <a href="https://music.apple.com/fr/artist/zara-larsson/570372593" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/fa-brands_itunes-note.svg" alt="Launch Zara Larsson on Apple Music"
+          class="img-iconelg">
+      </a>
+
+      <a href="https://www.youtube.com/channel/UCjNRJBlxvvS0UXAT2Ack-QQ" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/akar-icons_youtube-fill.svg" alt="Launch Zara Larsson on Youtube" class="img-iconelg">
+      </a>
+
+      <a href="https://open.spotify.com/intl-fr/artist/1Xylc3o4UrD53lo9CvFvVg" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/bi_spotify.svg" alt="Launch Zara Larsson on Spotify" class="img-iconelg">
+      </a>
+
+      <a href="https://music.amazon.fr/artists/B00BEW7GNM/zara-larsson" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/arcticons_amazon-music.svg" alt="Launch Zara Larsson on amazon music"
+          class="img-iconelg">
+      </a>
+
+      <a href="https://soundcloud.com/zaralarssonofficial" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/simple-icons_pandora.svg" alt="Launch Zara Larsson on pandora" class="img-iconelg">
+      </a>
+
+      <a href="https://soundcloud.com/zaralarssonofficial" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/ri_soundcloud-fill.svg" alt="Launch Zara Larsson on soundcloud" class="img-iconelg">
+      </a>
+
+      <a href="https://music.youtube.com/channel/UCjNRJBlxvvS0UXAT2Ack-QQ" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/simple-icons_youtubemusic.svg" alt="Launch Zara Larsson on youtube music"
+          class="img-iconelg">
+      </a>
+
+      <a href="https://www.deezer.com/fr/artist/4331004" target="_blank" class="icone iconelg">
+        <img src="./assets/icons/fa7-brands_deezer.svg" alt="Launch Zara Larsson on deezer" class="img-iconelg">
+      </a>
+
+    </div>
+
+    <p class="text footerlink">
+      <a href="https://www.sonymusic.com/">2025 Sony Music Entertainment.</a>
+      All Rights Reserved.
+      <a href="https://www.sonymusic.com/feedback/">Send us feedback</a> |
+      <a href="https://www.sonymusic.com/privacy-policy/">Privacy Policy</a> |
+      <a href="https://www.sonymusic.com/how-we-use-your-data/">How we use your data</a> |
+      <a href="https://www.sonymusic.com/ccpa-contact-form/">Do not sell my personal information</a> |
+      <a href="https://www.sonymusic.com/privacy-policy/#your-california-privacy-rights">Your california privacy
+        rights</a> |
+      <a href="https://www.sonymusic.com/terms-and-conditions/">Terms and conditions</a>
+
+    </p>
+
+  </footer>
+
+
+  <!-- Script principal (facultatif) -->
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

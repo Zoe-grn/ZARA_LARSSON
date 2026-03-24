@@ -1,0 +1,72 @@
+/* Reset / normalize léger pour partir sur une base propre */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  /* Définir explicitement la taille de base (16px par défaut) */
+  font-size: 16px;
+  /* Permet aux utilisateurs d'agrandir/réduire avec leur navigateur */
+  -webkit-text-size-adjust: 100%;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+ /* max-width: 100%;*/
+  /*emelyne 18/02*/width: 100%;/*emelyne 18/02*/
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  /*emelyne 18/02*/outline: none;/*emelyne 18/02*/
+}
+
+p{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  /* ou plus simplement */
+  margin: 0;
+}
+h2,
+h1 {
+  all: unset;
+  display: block;
+  margin: 0;
+  font-size: unset;
+  margin-block-start: unset;
+  margin-block-end: unset;
+  margin-inline-start: unset;
+  margin-inline-end: unset;
+  font-weight: unset;
+  unicode-bidi: unset;
+}
+
+/*emelyne 18/02*/
+h3{
+  margin: 0;       
+  padding: 0;  
+  line-height: 1;
+}
+/*emelyne 18/02*/
+
+/*emelyne 05/03*/
+li{
+  line-height: 1.2;
+}
+/*emelyne 05/03*/
+
+

@@ -1,0 +1,168 @@
+.card-date p.text:first-of-type {
+  width: 237px;
+  color: var(--hot-pink)
+}
+
+.card-date p.text:nth-of-type(2) {
+  width: 237px;
+}
+
+
+.card-date p.text:nth-of-type(3) {
+  font-weight: bold;
+  width: 237px;
+  text-align: right;
+}
+
+.card-date {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 56px;
+  padding-right: 56px;
+}
+
+.top-border {
+  border-top: 2px solid #009BEE
+}
+
+.button-tour {
+  display: flex;
+  justify-content: right;
+  width: 237px;
+}
+
+/*effet de la div titre 26-02 même pas besoin de responsive lol*/
+
+.glass-effect-h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--rainbow-gradient);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  border-radius: 80px;
+  padding: 8px 56px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*css des card album page music 26-02*/
+.card-album {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  gap: 8px;
+  justify-self: center;
+
+}
+
+.card-album img {
+  width: 100%;
+}
+/*css des card merch page merch 26-02*/
+.card-merch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 350px;
+  gap: 8px;
+  width: 100%;
+  max-width: 200px;
+}
+
+
+.card-merch img {
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/*css pour les div en space-between 26-02*/
+.produit-merch {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*css des card apparel 26-02*/
+.card-Apparel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 200px;
+  gap: 0.5rem ;
+  height: 350px;
+  justify-self: center;
+
+}
+
+.card-Apparel img {
+  max-height: 200px;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/*css des grid 26-02*/
+
+
+
+
+@media (max-width: 900px) {
+  .card-date {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3.5rem;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .button-tour {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .card-date p.text,
+  .button-tour {
+    width: auto !important;
+  }
+
+  .produit-merch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+     /*emelyne 10/03*/flex-wrap: wrap;
+  /*emelyne 10/03*/
+  }
+
+}
+
+
+
+
+/* 1 colonne */
+@media (max-width: 600px) {
+  
+
+  /*emelyne 08/03*/
+    .produit-merch{
+    justify-content: center;
+  } /*emelyne 08/03*/
+
+
+  .card-album {
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,160 @@
+
+/*icones*/
+.icone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  border-radius: var(--radius-cercle);
+  background: var(--pink-gradient);
+  border: 1px solid var(--hot-pink);
+  box-shadow: var(--drop-shadow);
+}
+
+.img-icone {
+  /*emelyne 07/03*/width: 62.5%;
+  height: auto;/*emelyne 07/03*/
+}
+
+/*icone des plateformes de musique*/
+.iconelg {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.img-iconelg {
+  /*emelyne 07/03*/width: 62.5%;
+  height: auto/*emelyne 07/03*/
+}
+
+/*bouton close*/
+.buttonclose {
+  width: 3rem;
+  height: 3rem;
+}
+
+.buttonclose-img {
+  /*emelyne 07/03*/width: 54%;
+  height: auto;/*emelyne 07/03*/
+}
+
+.buttonclose:hover{
+  background: var(--onclick-pink);
+  box-shadow: var(--inner-shadow-black);
+}
+
+/*bouton play modification 08/03*/
+.buttonplay {
+  background: var(--button-gradient);
+  border: 1px solid var(--Blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 57px;
+  height: 57px;
+  box-shadow: var(--drop-shadow);
+}
+
+.buttonplay-img {
+  /*emelyne 07/03*/width: 50%;
+  height: auto;/*emelyne 07/03*/
+}
+
+
+/*boutons nav*/
+.nav-button {
+  width: 100%;
+  height: 48px;
+  background: var(--nav-gradient);
+  border: 1px solid var(--dark-blue);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: var(--inner-shadow-nav1);
+  padding: 10px;
+
+  &.nav-button-currentpage,
+  &:active {
+    box-shadow: var(--inner-shadow-nav2);
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  .nav-button:first-child {
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  }
+
+  .nav-button:last-child {
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  }
+
+}
+
+.nav-img {
+  /*emelyne 07/03*/width: 17%; /*emelyne 07/03*/
+  height: auto;
+}
+
+.text-nav {
+  color: var(--dark-blue)
+}
+
+
+/*rectangle button*/
+
+.rectangle-button{
+display: flex;
+align-items: center;
+justify-content: center;
+/*emelyne 07/03*/height: auto;
+padding: 7px 16px;/*emelyne 07/03*/
+border-radius: var(--radius-md);
+border: 1px solid var(--Blue);
+background: var(--button-gradient);
+color: white;
+}
+
+
+/*emelyne 07/03*/
+.button-yes.is-clicked {
+background: var(--pink-gradient);
+border-color: var(--bright-pink);
+}
+
+.button-yes.is-clicked:hover{
+box-shadow: var(--inner-shadow-pink2);
+}
+
+
+.button-submit.is-clicked {
+background: var(--onclick-pink);
+border-color: var(--bright-pink);
+box-shadow: var(--inner-shadow-pink2);
+}
+/*emelyne 07/03*/
+
+.rectangle-button:active{
+  box-shadow: var(--inner-shadow);
+}
+
+/*target boutons emelyne 07/03*/
+.target-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+width: clamp(80px, 15vw, 150px);
+  height: clamp(80px, 15vw, 150px);
+  background: var(--rainbow-gradient);
+  border-radius: var(--radius-cercle);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  box-shadow: var(--inner-shadow-white);
+}
+
+.target-img{
+  width: 75%;
+  height: auto;
+}
+/*emelyne 07/03*/

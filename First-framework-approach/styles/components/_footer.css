@@ -1,0 +1,61 @@
+footer {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: var(--main-padding) 88px;
+gap: 80px;
+background-color: var(--hot-pink);
+color: #fff;
+width: 100%;
+}
+
+form{
+display: flex;
+/*emelyne 03/07*/width: 100%;/*emelyne 03/07*/
+flex-direction: row;
+flex-wrap: wrap;
+align-items: center;
+gap: 16px;
+}
+
+input[type="email"] {
+  display: flex;
+   /*emelyne 03/07*/width: 100%;
+  max-width: 340px;      
+  height: auto;/*emelyne 03/07*/     
+  padding: 12px 16px;  
+  box-shadow: var(--inner-shadow-pink);
+  background-color: #fff;
+  border: 1px solid #fff;            
+}
+
+input::placeholder{
+  color: #E7137C85;
+}
+
+
+.platforms{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap:40px;
+}
+
+
+.footerlink a{
+  text-decoration: underline;
+}
+
+/*emelyne 07/03*/
+@media (max-width:800px){
+  footer{
+    gap:40px;
+    padding: var(--main-padding);
+    padding-bottom: 88px;
+  }
+
+  input[type="email"]{
+    max-width: 100%;
+  }
+}
+/*emelyne 07/03*/
